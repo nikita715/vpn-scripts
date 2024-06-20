@@ -12,6 +12,8 @@ wizard_prompt() {
 
 # Function to configure dante
 configure_dante() {
+    apt-get update
+    apt-get install dante-server
     echo "Configuring Dante SOCKS5 proxy server..."
 
     # Create a new configuration file
